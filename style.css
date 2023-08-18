@@ -7,12 +7,12 @@
 body {
     height: 100vh;
     box-sizing: border-box;
-    background-color: #292929;
+    background-color: #100b10;
     color: #F6F6F6;
 }
 
 .titulo-destaque {
-    color: #E7C21F;
+    color: #bf0161;
 }
 
 .apresentacao{
@@ -44,17 +44,27 @@ body {
 
 .apresentacao__links{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
 }
 
 .apresentacao__links__button{
-    background-color: #E7C21F;
-    width: 280px;
+    /* background-color: #bf0161; */
+    width: 378px;
     text-align: center;
     font-family:'Krona One', sans-serif;
     font-size: 24px;
-    border-radius: 16px;
+    border-radius: 8px;
     padding: 21.5px 0px;
     text-decoration: none;
-    color: black;
+    color: white;
+    border: 2px solid #bf0161;
+    
+}
+
+.apresentacao__links_sub{
+    font-family: 'Krona One', sans-serif;
+    font-size: 24px;
 }
