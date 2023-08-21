@@ -54,6 +54,9 @@ body {
 .apresentacao__links__button{
     /* background-color: #bf0161; */
     width: 378px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     text-align: center;
     font-family:'Krona One', sans-serif;
     font-size: 24px;
@@ -63,6 +66,10 @@ body {
     color: white;
     border: 2px solid #bf0161;
     
+}
+
+.apresentacao__links__button:hover{
+    background-color: #272727;
 }
 
 .apresentacao__links_sub{
