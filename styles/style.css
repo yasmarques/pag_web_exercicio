@@ -1,22 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@1&display=swap');
 
+:root{
+    --preto: #100b10;
+    --rosa: #bf0161;
+    --branco: #F6F6F6;
+    --hover: #272727;
+
+    --titulo: 'Krona One', sans-serif;
+    --texto: 'Montserrat', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 body {
-    height: 100vh;
     box-sizing: border-box;
-    background-color: #100b10;
-    color: #F6F6F6;
+    background-color: var(--preto);
+    color: var(--branco);
 }
 
 .titulo-destaque {
-    color: #bf0161;
+    color: var(--rosa);
 }
 
 .apresentacao{
-    margin: 10% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,15 +41,14 @@ body {
 
 .apresentacao__conteudo__titulo{
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--titulo);
 
     
 }
 
 .apresentacao__conteudo__texto{
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    /* text-align: justify; */
+    font-family: var(--texto);
 }
 
 .apresentacao__links{
@@ -52,27 +60,55 @@ body {
 }
 
 .apresentacao__links__button{
-    /* background-color: #bf0161; */
     width: 378px;
     display: flex;
     justify-content: center;
     gap: 16px;
     text-align: center;
-    font-family:'Krona One', sans-serif;
+    font-family:var(--titulo);
     font-size: 24px;
     border-radius: 8px;
     padding: 21.5px 0px;
     text-decoration: none;
     color: white;
-    border: 2px solid #bf0161;
+    border: 2px solid var(--rosa);
     
 }
 
 .apresentacao__links__button:hover{
-    background-color: #272727;
+    background-color: var(--hover);
 }
 
 .apresentacao__links_sub{
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--titulo);
     font-size: 24px;
+}
+
+.rodape{
+    background-color: var(--rosa);
+    font-family: Kr;
+    font-size: 24px;
+    font-family: var(--texto);
+    text-align: center;
+    padding: 24px;
+
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--rosa);
+    font-family: var(--texto);
+    text-decoration: none;
+    
 }
