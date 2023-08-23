@@ -86,7 +86,7 @@ body {
 
 .rodape{
     background-color: var(--rosa);
-    font-family: Kr;
+    font-family: var(--titulo);
     font-size: 24px;
     font-family: var(--texto);
     text-align: center;
