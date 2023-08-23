@@ -29,6 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
     
 }
 
@@ -115,4 +116,17 @@ body {
 
 .apresentacao__imagem{
     width: 50%;
+}
+
+@media (max-width:1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: auto;
+    }
 }
